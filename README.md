@@ -15,4 +15,30 @@ Basic code snippets.
         backgroundImage: `url(${background})`,
       }}
     >
+    {/* Content Here */}
+    </div>
+```
+
+---
+
+### Custom Scroll Wheel + Tailwind + Font Import:
+```
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(37, 37, 37); /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #343c79; /* Thumb color */
+  border-radius: 0px;
+}
+
 ```
