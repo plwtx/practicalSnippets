@@ -1,0 +1,2 @@
+# usefullSnippets
+Just some usefull code snippets i use in my projects. I made this repository to make my daily work easy and share it with my friends when necessary. Feel free to use it as you wish.
