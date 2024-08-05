@@ -4,6 +4,7 @@ Just some usefull code snippets i use in my projects. I made this repository to 
 # Chapter one
 Basic code snippets.
 
+---
 
 ### Div with background image optimnized for mobile:
 ```
@@ -42,8 +43,10 @@ Basic code snippets.
 }
 
 ```
+---
 
-### vite.config.js
+### vite.config.js | Network run
+Configurations to run server on network with "3333" port by default.
 ```
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
@@ -61,3 +64,4 @@ export default defineConfig({
 });
 
 ```
+---
