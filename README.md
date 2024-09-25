@@ -1,7 +1,7 @@
 ## Usefull Code Snippets
 Just some usefull code snippets i use in my projects. I made this repository to make my daily work easy and share it with my friends when necessary. Feel free to use it as you wish. Snippets are short, reusable code blocks that can be used on projects.
 
-# Chapter one
+# I
 Basic code snippets.
 
 ---
@@ -65,3 +65,16 @@ export default defineConfig({
 
 ```
 ---
+
+### Additional CSS ***on top of Tailwind.***
+```
+@layer utilities {
+
+   .clipp{
+
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+
+   }
+
+}
+```
