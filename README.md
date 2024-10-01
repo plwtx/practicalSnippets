@@ -2,6 +2,53 @@
 Just some usefull code snippets i use in my projects. I made this repository to make my daily work easy and share it with my friends when necessary. Feel free to use it as you wish. Snippets are short, reusable code blocks that can be used on projects.
 
 # I
+initialization
+
+### Vite with React.js or React.ts template:
+```
+npm create vite@latest name -- --template react / react-ts
+cd name
+```
+
+### Tailwind:
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### tailwind.config.js:
+```
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+```
+// index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+### Prettier with Tailwind:
+
+```
+npm install -D prettier prettier-plugin-tailwindcss
+```
+```
+// .prettierrc
+{
+  "plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+# II
 Basic code snippets.
 
 ---
