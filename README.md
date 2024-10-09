@@ -113,7 +113,7 @@ export default defineConfig({
 ```
 ---
 
-### Additional CSS ***on top of Tailwind.***
+### Additional CSS ***on top of Tailwind (main.css / idnex.css):***
 ```
 @layer utilities {
 
