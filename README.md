@@ -29,8 +29,8 @@ export default {
   plugins: [],
 }
 ```
+### index.css:
 ```
-// index.css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,8 +41,8 @@ export default {
 ```
 npm install -D prettier prettier-plugin-tailwindcss
 ```
+### .prettierrc:
 ```
-// .prettierrc
 {
   "plugins": ["prettier-plugin-tailwindcss"]
 }
