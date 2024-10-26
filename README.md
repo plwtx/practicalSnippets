@@ -129,3 +129,54 @@ export default defineConfig({
 
 }
 ```
+
+### Show or hide component depending on state:
+```
+  const [loading, setLoading] = useState(false);
+
+  const handleLoading = () => {
+    setLoading(false);
+    setTimeout(() => {
+      setLoading(true);
+    }, 2500);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
+
+
+
+{loading ? (
+        <Loading />
+      ) : ( <div> <div/> )}
+
+{loading ? ( ) : ( )}
+
+{/* Button version:  */}
+
+<button
+  onClick={() => { handleLoading }}
+>
+</button>
+```
+
+### OnClick show component:
+
+```
+<button
+  onClick={() => {
+    someSound.play(); 
+    setCopiedMsg(true);
+    setTimeout(() => { 
+      setCopiedMsg(false);
+    }, 1000);
+  }}
+>
+</button>
+```
+
+
