@@ -226,10 +226,18 @@ const Home = ({ scrollYProgress }) => {
 ##### Theme change button:
 ```
         {/* Theme change button: */}
-          <div className="">
+          <div className="group z-50 m-3 flex justify-start gap-3">
+            <div className="absolute -right-12 -top-20 z-0 h-20 w-72 rounded-full bg-gray-300 opacity-0 blur-3xl transition-all duration-1000 group-hover:opacity-100 dark:bg-blux"></div>
+            <p className="z-10 translate-x-20 font-AfacadFlux text-base tracking-widest text-gray-700 opacity-0 blur-sm transition-all duration-500 group-hover:translate-x-0 group-hover:tracking-normal group-hover:opacity-100 group-hover:blur-0 dark:text-gray-300">
+              Click to toggle dark mode{" "}
+              <span className="pl-1 font-sans font-black text-blux">
+                &rarr;
+              </span>
+            </p>
+
             <button
               onClick={toggleTheme}
-              class="h-6 w-6 cursor-pointer transition-all duration-500"
+              class="z-30 h-6 w-6 cursor-pointer transition-all duration-500 group-hover:rotate-45"
             >
               <svg
                 class="block fill-gray-300 hover:fill-blux dark:hidden"
