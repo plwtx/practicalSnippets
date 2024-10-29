@@ -271,4 +271,67 @@ const Home = ({ scrollYProgress }) => {
   darkMode: "selector",
 ```
 
+---
+
+# III 
+
+### Adding TypeScript to existing Vite application:
+
+Credits to: [NetYogi](https://stackoverflow.com/users/7157170/netyogi)
+
+
+Firstly, install TypeScript and types for react and react-dom:
+```
+npm install -D typescript @types/react @types/react-dom
+```
+
+Next, rename the vite.config.js file to vite.config.ts.
+Thirdly, configure your tsconfig.json as follows,
+```
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
+```
+,and a tsconfig.node.json,
+```
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts"]
+}
+```
+Next, create a file named vite-env.d.ts inside your src/ folder and copy and paste the following (with the three slashes at the beginning):
+```
+/// <reference types="vite/client" />
+```
+This creates a type file for the vite client.
+Lastly, in your index.html, change the name of your index.jsx to index.tsx as,
+```
+<script type="module" src="/src/index.tsx"></script>
+```
+TypeScript should now work on your Vite React project.
+
+
 
