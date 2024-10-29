@@ -10,13 +10,17 @@ initialization
 
 ### Vite with React.js or React.ts template:
 ```
-npm create vite@latest name -- --template react / react-ts
+npm create vite@latest name -- --template react
+```
+```
 cd name
 ```
 
 ### Tailwind:
 ```
 npm install -D tailwindcss postcss autoprefixer
+```
+```
 npx tailwindcss init -p
 ```
 
