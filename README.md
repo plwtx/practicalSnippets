@@ -2,12 +2,12 @@
 Just some usefull code snippets i use in my projects. I made this repository to make my daily work easy and share it with my friends when necessary. Feel free to use it as you wish. Snippets are short, reusable code blocks that can be used on projects.
 Please keep in mind that these are the snippets i use and it can be a bad practice. As time goes and as i learn more about web development i will come back and fix stuff that i did wrong.
 
-Thank you for your understanding.
+##### Thank you for your understanding.
 ---
-# Contents
-### I - [Initialization](#10-initialization)
-
-### II - [Basic Code snippets](#20-basic-code-snippets)
+### Contents
+#### 1.0 - [Initialization](#10-initialization)
+#### 2.0 - [Basic code snippets / blocks](#20-basic-code-snippets)
+#### 3.0 - [Et cetera](#30-et-cetera)
 
 ---
 
@@ -279,7 +279,7 @@ const Home = ({ scrollYProgress }) => {
 
 ---
 
-# III 
+## 3.0 Et cetera
 
 ### Adding TypeScript to existing Vite application:
 
