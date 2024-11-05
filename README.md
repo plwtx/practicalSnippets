@@ -3,13 +3,17 @@ Just some usefull code snippets i use in my projects. I made this repository to 
 Please keep in mind that these are the snippets i use and it can be a bad practice. As time goes and as i learn more about web development i will come back and fix stuff that i did wrong.
 
 Thank you for your understanding.
+---
+# Contents
+### I - [Initialization](#10-initialization)
 
-### I - Initialization
-### II - Basic Code snippets
+### II - [Basic Code snippets](#20-basic-code-snippets)
+
+---
 
 
-# I
-initialization
+
+## 1.0 Initialization
 
 ### Vite with React.js or React.ts template:
 ```
@@ -59,8 +63,7 @@ npm install -D prettier prettier-plugin-tailwindcss
 }
 ```
 
-# II
-Basic code snippets.
+## 2.0 Basic code snippets
 
 ---
 
