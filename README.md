@@ -6,6 +6,8 @@ Please keep in mind that these are the snippets i use and it can be a bad practi
 ---
 ### Contents
 #### 1.0 - [Initialization](#10-initialization)
+##### 1.1 - Installation of Vite
+##### 1.2 - Installation of Tailwind
 #### 2.0 - [Basic code snippets / blocks](#20-basic-code-snippets)
 #### 3.0 - [Et cetera](#30-et-cetera)
 
