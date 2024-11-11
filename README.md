@@ -196,7 +196,6 @@ export default defineConfig({
 
 
 ```
-const Home = ({ scrollYProgress }) => {
   // Get initial theme:
   const getInitialTheme = () => {
     // Local storage preference:
