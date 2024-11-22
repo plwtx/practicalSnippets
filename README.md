@@ -36,7 +36,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-### tailwind.config.js:
+###### tailwind.config.js:
 ```
 export default {
   content: [
@@ -49,7 +49,7 @@ export default {
   plugins: [],
 }
 ```
-### index.css:
+###### index.css:
 ```
 @tailwind base;
 @tailwind components;
@@ -61,12 +61,108 @@ export default {
 ```
 npm install -D prettier prettier-plugin-tailwindcss
 ```
-### .prettierrc:
+##### .prettierrc:
 ```
 {
   "plugins": ["prettier-plugin-tailwindcss"]
 }
 ```
+
+
+### i18n React Localization:
+```
+npm install react-i18next i18next
+```
+
+##### i18n.ts:
+
+```
+import i18n from "i18next";
+import { initReactI18next, Translation } from "react-i18next";
+
+i18n.use(initReactI18next).init({
+  // {t("word")}
+  // debug: true,
+  fallbackLng: "en",
+  resources: {
+    en: {
+      translation: {
+        word: "Word",
+      },
+    },
+    zh: {
+      translation: {
+        word: "Word",
+      },
+    },
+  },
+});
+```
+
+
+Navigation language setting (used only once per app load)
+Inside higher level component (usually app.jsx):
+```
+import "./i18n";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+```
+```
+useEffect(() => {
+  i18n.changeLanguage(navigator.language);
+}, []);
+```
+
+Other components / Language set button:
+```
+import "../i18n";
+import { useTranslation } from "react-i18next";
+```
+```
+  const { t, i18n } = useTranslation();
+  const [chinese, setChinese] = useState(false);
+  const changeLanguageEN = (lang) => {
+    i18n.changeLanguage("en");
+    setChinese(false);
+  };
+
+  const changeLanguageCN = (lang) => {
+    i18n.changeLanguage("zh");
+    setChinese(true);
+  };
+```
+Button:
+```
+onClick={changeLanguageCN}
+```
+
+Language specified content (other necessary parameters given above):
+```
+ <div className={`h-6 w-[0.1rem] ${chinese ? "invisible absolute" : ""} ${scrolled ? "bg-black" : "bg-white"}`}></div>
+```
+
+
+### Is window scrolled
+```
+ const [scrolled, setScrolled] = useState(false);
+
+ const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+```
+
 
 ## 2.0 Basic code snippets
 
