@@ -30,7 +30,7 @@ cd name
 
 ### Tailwind:
 ```
-npm install -D tailwindcss postcss autoprefixer
+npm install tailwindcss @tailwindcss/vite
 ```
 ```
 npx tailwindcss init -p
