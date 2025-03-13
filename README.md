@@ -28,7 +28,7 @@ npm create vite@latest name -- --template react
 cd name
 ```
 
-### Tailwind (OLD / deprecated):
+### Tailwind (OLD / deprecated): 90will change later
 ```
 npm install tailwindcss @tailwindcss/vite
 ```
