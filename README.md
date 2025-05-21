@@ -29,7 +29,7 @@ npm create vite@latest name -- --template react
 cd name
 ```
 
-### Tailwind (OLD / deprecated): 90will change later
+### Tailwind CSS
 ```
 npm install tailwindcss @tailwindcss/vite
 ```
@@ -37,24 +37,19 @@ npm install tailwindcss @tailwindcss/vite
 npx tailwindcss init -p
 ```
 
-###### tailwind.config.js:
+###### vite.config.ts:
 ```
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
   ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+})
 ```
 ###### index.css:
 ```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 ```
 
 ### Prettier with Tailwind:
