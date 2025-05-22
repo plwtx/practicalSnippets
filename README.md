@@ -11,7 +11,7 @@ Please keep in mind that these are the snippets i use and it can be a bad practi
 ##### 1.2 - Installation of Tailwind
 #### 2.0 - [Basic code snippets / blocks](#20-basic-code-snippets)
 ##### 2.1 - Div with background image optimnized for mobile:
-##### 2.2 - Custom Scroll Wheel + Tailwind + Font Import
+##### 2.2 - Custom Scroll Wheel
 #### 3.0 - [Et cetera](#30-et-cetera)
 ##### 3.1 - Adding TypeScript to existing Vite application
 
@@ -180,13 +180,8 @@ Language specified content (other necessary parameters given above):
 
 ---
 
-### Custom Scroll Wheel + Tailwind + Font Import:
+### Custom Scroll Wheel:
 ```
-@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -199,7 +194,6 @@ Language specified content (other necessary parameters given above):
   background-color: #343c79; /* Thumb color */
   border-radius: 0px;
 }
-
 ```
 ---
 
